@@ -1,20 +1,13 @@
 import { Header } from './components/layout/Header';
+import { Hero } from './components/section/hero';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#FDFCF8] text-stone-800 font-sans">
       <Header />
-      {/* Тут будет остальной контент */}
-      <main className="pt-20 text-center">
-        <section className="h-screen flex items-center justify-center bg-zinc-100">
-          <h1 className="text-4xl font-serif uppercase tracking-[0.2em]">
-            Vera Andreeva
-          </h1>
-        </section>
-        
-        <section className="h-screen flex items-center justify-center">
-          <p className="text-gray-500 italic">Здесь скоро будет портфолио...</p>
-        </section>
+      <main>
+        <Hero />
+        {/* Здесь позже будут Портфолио, Цены и Контакты */}
       </main>
     </div>
   );

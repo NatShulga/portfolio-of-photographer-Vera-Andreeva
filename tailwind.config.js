@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['Playfair Display', 'serif'], // Задел на будущее для красивых шрифтов
+        serif: ['Playfair Display', 'serif'], // Задел на будущее для красивых шрифтов))
       },
     },
   },

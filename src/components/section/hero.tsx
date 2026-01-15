@@ -18,9 +18,10 @@ export const Hero = () => {
           />
         
         <img 
-            src="/hero-photo-mobile.jpg" 
+            src="/hero-photo-desktop — vertical.jpg" 
             alt="Вера Андреева" 
-            className="absolute inset-0 w-full h-full object-cover object-center md:hidden" 
+            className="absolute inset-0 w-full h-full object-cover object-center md:hidden"
+            //<div className="relative w-full h-[450px] landscape:h-[80vh] md:h-[600px] overflow-hidden shadow-sm"> раскомментить на этапе проверки адаптива на телефоне
         />
         
           {/* Привязка текста в контейнеру фото, чтобы не гулял*/}

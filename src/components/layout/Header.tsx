@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Camera, Menu, X } from 'lucide-react'; // Иконки
 
 export const Header = () => {
@@ -13,10 +14,11 @@ export const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Портфолио', href: '#portfolio'},
-    { name: 'Обо мне', href: '#about'},
-    { name: 'Услуги', href: '#services'},
-    { name: 'Контакты', href: '#contacts'},
+    { name: 'Главная', to: '/' },
+    { name: 'Портфолио', to: '/portfolio'},
+    { name: 'Обо мне', to: '/about'},
+    { name: 'Услуги', to: '/services'},
+    { name: 'Контакты', to: '/contacts'},
   ]
 
   return (
@@ -38,17 +40,16 @@ export const Header = () => {
 
         {/* Меню для десктопа */}
         <nav className="hidden md:flex gap-8">
-          {navLinks.map((item) => (
-            <a 
-              key={item.name} 
-              href={item.href}
-              className={`text-sm uppercase tracking-widest hover:opacity-50 transition-opacity ${
-                isScrolled ? 'text-black' : 'text-stone-700'
-              }`}
-            >
-              {item.name}
-            </a>
-          ))}
+          {navLinks.map((link) => (
+    <Link 
+      key={link.name} 
+      to={link.to}
+      className={`text-sm uppercase tracking-widest hover:opacity-50 transition-opacity ${isScrolled ? 'text-black' : 'text-stone-700'
+      }`}
+    >
+      {link.name}
+    </Link>
+  ))}
         </nav>
 
         {/* Кнопка бургера */}
@@ -66,15 +67,15 @@ export const Header = () => {
         ${isOpen ? 'h-screen opacity-100 visible' : 'h-0 opacity-0 invisible'}
       `}>
         <nav className="flex flex-col items-center gap-8 pt-20">
-          {navLinks.map((item) => (
-            <a 
-              key={item.name} 
-              href={item.href}
+          {navLinks.map((link) => (
+            <Link
+              key={link.name} 
+              to={link.to}
               onClick={() => setIsOpen(false)} // Закрываем при клике
               className="text-2xl font-serif text-black uppercase"
             >
-              {item.name}
-            </a>
+              {link.name}
+            </Link>
           ))}
         </nav>
       </div>

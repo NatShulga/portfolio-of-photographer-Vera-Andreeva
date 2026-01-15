@@ -1,15 +1,29 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/layout/Header';
-import { Hero } from './components/section/hero';
+import { Home } from './pages/Home';
+import {About} from './pages/About';
+import { Contacts } from './pages/Contacts';
+import { Services } from './pages/Services';
 
 function App() {
   return (
+    <Router>
     <div className="min-h-screen bg-[#FDFCF8] text-stone-800 font-sans">
       <Header />
-      <main>
-        <Hero />
-        {/* Здесь позже будут Портфолио, Цены и Контакты */}
-      </main>
+
+
+      <Routes>
+      <Route path="/" element={<Home />} />
+
+      <Route path="/about" element={<About />} />
+
+      <Route path="/contacts" element={<Contacts />} />
+
+      <Route path="/services" element={<Services />} />
+
+      </Routes>
     </div>
+    </Router>
   );
 }
 

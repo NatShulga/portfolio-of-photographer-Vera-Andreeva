@@ -16,7 +16,7 @@ export const Contacts = () => {
           Напишите мне в удобном для вас мессенджере, и мы обсудим вашу идею.
         </p>
 
-        {/* 3. Список контактов */}
+        {/*Список контактов */}
         <div className="flex flex-col space-y-8 items-center">
           
           {/* Email */}
@@ -27,7 +27,7 @@ export const Contacts = () => {
             </a>
           </div>
 
-          {/* Telegram */}
+          {/* телега */}
           <div className="group">
             <p className="text-xs uppercase tracking-widest text-stone-400 mb-2">Telegram</p>
             <a href="https://t.me/yourname" target="_blank" className="text-xl text-stone-800 hover:text-stone-400 transition-colors">

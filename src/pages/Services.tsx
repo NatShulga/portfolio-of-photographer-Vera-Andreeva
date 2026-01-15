@@ -1,7 +1,7 @@
 export const Services = () => {
   const pricePlans = [
     {
-      title: "Индивидуальная",
+      title: "INDIVIDUAL",
       price: "15 000",
       duration: "1.5 - 2 часа",
       features: [
@@ -12,7 +12,7 @@ export const Services = () => {
       ]
     },
     {
-      title: "Love Story",
+      title: "WEDDING & LOVE",
       price: "20 000",
       duration: "2 часа",
       features: [
@@ -23,11 +23,33 @@ export const Services = () => {
       ]
     },
     {
-      title: "Контент-съемка",
+      title: "EVENT",
       price: "25 000",
       duration: "3 часа",
       features: [
         "Разработка визуальной стратегии",
+        "100+ исходников в день съемки",
+        "30 готовых фото для ленты",
+        "Срок хранения в облаке — 1 год"
+      ]
+    },
+    {
+      title: "FAMILY",
+      price: "25 000",
+      duration: "3 часа",
+      features: [
+       "Помощь в подборе образа и локации",
+        "50+ фотографий в авторской ретуши",
+        "Закрытая онлайн-галерея на 3 месяца",
+        "Готовность снимков до 14 дней"
+      ]
+    },
+    {
+      title: "KIDS BIRTHDAY",
+      price: "25 000",
+      duration: "3 часа",
+      features: [
+       "Разработка визуальной стратегии",
         "100+ исходников в день съемки",
         "30 готовых фото для ленты",
         "Срок хранения в облаке — 1 год"

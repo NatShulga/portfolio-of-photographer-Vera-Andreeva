@@ -4,7 +4,7 @@ import { FeaturedWorks } from '../components/section/FeaturedWorks';
 export const Home = () => {
   return (
     <main>
-      {/*другие блоки сайта*/}
+      {/*блоки сайта*/}
       <Hero />
       <FeaturedWorks />
       {/* <PortfolioPreview /> */}

@@ -51,6 +51,7 @@ export const About = () => {
                 <a href="" target="_blank" rel="noopener noreferrer"className="hover:text-stone-400 transition-colors">
                     VK
                 </a>
+                <a href="#" className="hover:text-stone-400 transition-colors">Pinterest</a>
               </div>
             </div>
           </div>

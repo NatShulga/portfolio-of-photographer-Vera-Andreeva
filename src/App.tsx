@@ -12,7 +12,6 @@ function App() {
     <div className="min-h-screen bg-[#FDFCF8] text-stone-800 font-sans">
       <Header />
 
-
       <Routes>
       <Route path="/" element={<Home />} />
 

@@ -14,7 +14,7 @@ export const About = () => {
           <div className="relative aspect-[3/4] w-full overflow-hidden shadow-sm">
             <img 
               src="/about-me.jpg" 
-              alt="Вера Андреева"
+              alt="Денис Блэк"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
@@ -22,7 +22,7 @@ export const About = () => {
           {/* ПРАВАЯ КОЛОНКА: Текст */}
           <div className="flex flex-col space-y-6">
             <h2 className="font-serif text-4xl md:text-5xl text-stone-800">
-              Вера Андреева
+              Денис Блэк
             </h2>
             
             {/* Тонкая разделительная линия */}
@@ -48,7 +48,7 @@ export const About = () => {
               </p>
               <div className="flex gap-6 text-stone-600">
                 <a href="#" className="hover:text-stone-400 transition-colors">Instagram</a>
-                <a href="https://vk.com/andreeva_vera_photo" target="_blank" rel="noopener noreferrer"className="hover:text-stone-400 transition-colors">
+                <a href="" target="_blank" rel="noopener noreferrer"className="hover:text-stone-400 transition-colors">
                     VK
                 </a>
               </div>

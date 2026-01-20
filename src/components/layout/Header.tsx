@@ -34,7 +34,7 @@ export const Header = () => {
           <span className={`text-xl font-serif uppercase tracking-tighter ${
             isScrolled ? 'text-black' : 'text-stone-700'
           }`}>
-            Vera Andreeva
+            Denis Black
           </span>
         </div>
 

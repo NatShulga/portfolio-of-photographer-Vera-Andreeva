@@ -13,13 +13,13 @@ export const Hero = () => {
         <div className="relative w-full h-[450px] md:h-[600px] overflow-hidden shadow-sm">
           <img 
             src="/hero-photo-desktop.jpg" 
-            alt="Вера Андреева" 
+            alt="Денис Блэк" 
             className="absolute inset-0 w-full h-full object-cover object-[center_30%] hidden md:block"
           />
         
         <img 
             src="/hero-photo-desktop — vertical.jpg" 
-            alt="Вера Андреева" 
+            alt="Денис Блэк" 
             className="absolute inset-0 w-full h-full object-cover object-center md:hidden"
             //<div className="relative w-full h-[450px] landscape:h-[80vh] md:h-[600px] overflow-hidden shadow-sm"> раскомментить на этапе проверки адаптива на телефоне
         />
@@ -28,7 +28,7 @@ export const Hero = () => {
           <div className="absolute inset-0 flex items-end justify-start p-8 md:p-16">
             <div className="text-left">
               <h1 className="mb-2 font-serif text-3xl md:text-5xl text-white drop-shadow-md">
-                Вера Андреева
+                Денис Блэк
               </h1>
               <div className="mb-3 h-[2px] w-12 bg-white/40"></div>
               <p className="text-[10px] md:text-xs tracking-[0.4em] text-white/90 uppercase font-light">

@@ -8,69 +8,66 @@ export const FeaturedWorks = () => {
       category: 'wedding & love-story',
       title: 'WEDDING & LOVE',
       src: '/wedding.jpg',
-      gridClass: 'md:col-span-1 md:row-span-2' // Высокое фото
+      gridClass: 'md:col-span-1 md:row-span-2', // Высокое фото
     },
     {
       id: '02',
       category: 'individual',
       title: 'INDIVIDUAL',
       src: '/individual.jpg',
-      gridClass: 'md:col-span-1 md:row-span-1'
+      gridClass: 'md:col-span-1 md:row-span-1',
     },
     {
       id: '03',
       category: 'event',
       title: 'EVENTS',
       src: '/event.jpg',
-      gridClass: 'md:col-span-2 md:row-span-1' // Широкое фото
+      gridClass: 'md:col-span-2 md:row-span-1', // Широкое фото
     },
     {
       id: '04',
       category: 'family',
       title: 'FAMILY',
       src: '/family.jpg',
-      gridClass: 'md:col-span-1 md:row-span-1'
+      gridClass: 'md:col-span-1 md:row-span-1',
     },
     {
       id: '05',
       category: "children's birthday party",
       title: 'KIDS BIRTHDAY',
       src: '/kids-b.jpg',
-      gridClass: 'md:col-span-2 md:row-span-1'
-    }
+      gridClass: 'md:col-span-2 md:row-span-1',
+    },
   ];
 
   return (
-    <section className="py-10 bg-[#FDFCF8] px-4">
-      <div className="max-w-6xl mx-auto">
-        
-        <div className="text-center mb-15">
-          <h2 className="text-[15px] uppercase tracking-[0.4em] text-stone-400">
-           Gallery
-          </h2>
+    <section className="md: bg-[#FDFCF8] px-4 py-5">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-8 mb-10 text-center md:mb-10">
+          <h2 className="text-[15px] tracking-[0.4em] text-stone-400 uppercase">Gallery</h2>
         </div>
 
         {/* Сетка */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-12 auto-rows-[350px]">
+        <div className="grid auto-rows-[250px] grid-cols-1 gap-2 md:grid-cols-4 md:gap-4">
           {featuredItems.map((item) => (
-            <Link 
-              key={item.id} 
-              to={`/portfolio?category=${item.category}`} 
-              className={`flex flex-col group ${item.gridClass}`}
+            <Link
+              key={item.id}
+              to={`/portfolio?category=${item.category}`}
+              className={`group flex flex-col ${item.gridClass}`}
             >
               {/* Контейнер для фото */}
-              <div className="flex-grow overflow-hidden bg-stone-100 mb-2">
-                <img 
-                  src={item.src} 
+              <div className="mb-2 flex-grow overflow-hidden bg-stone-100">
+                <img
+                  src={item.src}
                   alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
 
               {/* Подпись под фото */}
-              <div className="flex justify-between items-baseline border-b border-stone-100 pb-2">
-                <span className="text-[10px] text-stone-600 font-light">{item.id}</span>
-                <h3 className="text-[12px] uppercase tracking-[0.2em] text-stone-600 group-hover:text-black transition-colors">
+              <div className="flex items-baseline justify-between border-b border-stone-100 pb-2">
+                <span className="text-[10px] font-light text-stone-600">{item.id}</span>
+                <h3 className="text-[12px] tracking-[0.2em] text-stone-600 uppercase transition-colors group-hover:text-black">
                   {item.title}
                 </h3>
               </div>
@@ -78,10 +75,10 @@ export const FeaturedWorks = () => {
           ))}
         </div>
 
-        <div className="mt-20 text-center">
-          <Link 
-            to="/portfolio" 
-            className="inline-block px-12 py-4 border border-stone-200 text-[13px] uppercase tracking-[0.3em] text-stone-500 hover:bg-stone-800 hover:text-white transition-all duration-500"
+        <div className="mt-13 text-center">
+          <Link
+            to="/portfolio"
+            className="inline-block border border-stone-200 px-12 py-4 text-[13px] tracking-[0.3em] text-stone-500 uppercase transition-all duration-500 hover:bg-stone-800 hover:text-white"
           >
             View all works
           </Link>

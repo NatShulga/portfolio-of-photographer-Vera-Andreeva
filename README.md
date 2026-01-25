@@ -43,3 +43,19 @@ while maintaining high performance and intuitive navigation.
 Установите зависимости: npm install
 
 Запустите проект в режиме разработки: npm run dev
+
+### Бэкенд часть (Сервер)
+
+Серверная часть отвечает за работу с базой данных и хранение информации о фотоработах.
+
+#### Стек:
+
+* **Node.js + Express** (Серверная логика)
+* **MongoDB** (База данных в Docker)
+* **Mongoose** (Взаимодействие с БД)
+
+Запуск внутри папки cd backend. 
+
+node server.js 
+
+Доступен по адресу: `http://localhost:5000`

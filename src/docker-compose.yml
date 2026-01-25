@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  # Название сервиса базы данных
+  mongodb:
+    image: mongo:latest
+    container_name: portfolio_db
+    # Пробрасываем порт: теперь база доступна по адресу localhost:27017
+    ports:
+      - "27017:27017"
+    # Сохраняем данные во внешнее хранилище, чтобы они не удалились при перезагрузке
+    volumes:
+      - mongo_data:/data/db
+    restart: always
+
+volumes:
+  mongo_data:
+  
